@@ -23,16 +23,16 @@
     "automation",
     "terminal"
   ],
-  "author": "OWNER",
+  "author": "liangzhengtao",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OWNER/ai-commit.git"
+    "url": "https://github.com/liangzhengtao/ai-commit.git"
   },
   "bugs": {
-    "url": "https://github.com/OWNER/ai-commit/issues"
+    "url": "https://github.com/liangzhengtao/ai-commit/issues"
   },
-  "homepage": "https://github.com/OWNER/ai-commit#readme",
+  "homepage": "https://github.com/liangzhengtao/ai-commit#readme",
   "engines": {
     "node": ">=16"
   },
