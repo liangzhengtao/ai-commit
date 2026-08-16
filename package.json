@@ -1,0 +1,52 @@
+{
+  "name": "ai-commit",
+  "version": "1.0.0",
+  "description": "AI-powered git commit message generator with beautiful terminal output — no API key needed",
+  "main": "src/index.js",
+  "bin": {
+    "ai-commit": "./bin/cli.js",
+    "aic": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "ai",
+    "git",
+    "commit",
+    "conventional-commits",
+    "cli",
+    "developer-tools",
+    "commit-message",
+    "git-commit",
+    "automation",
+    "terminal"
+  ],
+  "author": "OWNER",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/ai-commit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OWNER/ai-commit/issues"
+  },
+  "homepage": "https://github.com/OWNER/ai-commit#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
