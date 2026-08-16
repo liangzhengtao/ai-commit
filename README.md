@@ -281,6 +281,14 @@ node bin/cli.js
 
 ---
 
+## See Also
+
+| Project | Description |
+|---------|-------------|
+| [**awesome-ai-rules**](https://github.com/OWNER/awesome-ai-rules) | 20 production-ready AI coding rules |
+| [**vibe-check**](https://github.com/OWNER/vibe-check) | `npx vibe-check` — Score your project's AI-readiness |
+| [**awesome-mcp-servers**](https://github.com/OWNER/awesome-mcp-servers) | MCP servers for Cursor, Claude Code, and Kimi Code |
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

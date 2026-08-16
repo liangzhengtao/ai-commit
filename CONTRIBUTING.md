@@ -7,7 +7,7 @@ Thank you for your interest in contributing to `aic`! This document provides gui
 1. **Fork** the repository on GitHub
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ai-commit.git
+   git clone https://github.com/OWNER/ai-commit.git
    cd ai-commit
    ```
 3. **Install** dependencies:

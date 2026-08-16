@@ -1,0 +1,8 @@
+test/
+.github/
+.git/
+.gitignore
+CONTRIBUTING.md
+CHANGELOG.md
+*.tgz
+coverage/
