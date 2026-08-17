@@ -1,6 +1,6 @@
 {
-  "name": "ai-commit",
-  "version": "1.0.0",
+  "name": "@liangzhengtao/commit-ai",
+  "version": "1.0.1",
   "description": "AI-powered git commit message generator with beautiful terminal output — no API key needed",
   "main": "src/index.js",
   "bin": {
