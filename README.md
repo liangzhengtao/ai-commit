@@ -287,7 +287,7 @@ node bin/cli.js
 
 | Project | Description |
 |---------|-------------|
-| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 production-ready AI coding rules |
+| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 production AI coding rules |
 | [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — Score your project's AI-readiness |
 | [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | MCP servers for Cursor, Claude Code, and Kimi Code |
 
