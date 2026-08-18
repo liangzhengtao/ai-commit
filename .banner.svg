@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent)"/>
+  <rect x="80" y="180" width="100" height="28" rx="14" fill="#43e97b" opacity="0.2"/>
+  <text x="130" y="199" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#43e97b" text-anchor="middle">AI TOOLS</text>
+  <text x="80" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#e6edf3" letter-spacing="-0.5">ai-commit</text>
+  <text x="80" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#8b949e">AI writes your commit messages — no API key needed</text>
+  <rect x="80" y="370" width="120" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="80" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#8b949e">
+    <tspan fill="#e6edf3">✦</tspan> No API Key  ·  <tspan fill="#e6edf3">✦</tspan> Conventional Commits  ·  <tspan fill="#e6edf3">✦</tspan> Rule-based
+  </text>
+  <rect x="0" y="600" width="1280" height="40" fill="rgba(255,255,255,0.02)"/>
+  <text x="80" y="625" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#484f58">github.com/liangzhengtao/ai-commit</text>
+  <text x="1200" y="625" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#484f58" text-anchor="end">liangzhengtao</text>
+  <circle cx="1100" cy="200" r="150" fill="#43e97b" opacity="0.05"/>
+  <circle cx="1150" cy="250" r="100" fill="#38f9d7" opacity="0.05"/>
+  <text x="1100" y="320" font-size="80" text-anchor="middle">🤖</text>
+</svg>
