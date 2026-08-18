@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dry-run mode for previewing messages
 - Git hook support with `--no-verify` option
 - Two CLI aliases: `ai-commit` and `aic`
-- Comprehensive test suite with 30+ tests
+- Complete test suite with 30+ tests
 - Full documentation with examples
 
 ### Planned
