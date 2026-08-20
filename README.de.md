@@ -1,5 +1,6 @@
 [English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Español](README.es.md) | [العربية](README.ar.md) | [한국어](README.ko.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [Deutsch](README.de.md)
-n<div align="center">
+
+<div align="center">
 
 <img src=".banner.svg" width="100%" alt="banner">
 
@@ -8,12 +9,12 @@ n<div align="center">
 
 <div align="center">
 
-# 🤖 `aic` — AI Commit Message Generator
+# 🤖 `aic` — KI-Commit-Message-Generator
 
-**AI writes your commit messages. You just review and confirm.**
+**Die KI schreibt Ihre Commit-Nachrichten. Sie müssen nur prüfen und bestätigen.**
 
-No API keys. No cloud services. No subscriptions.  
-Pure on-device intelligence that analyzes your staged changes and generates [Conventional Commits](https://www.conventionalcommits.org/) instantly.
+Keine API-Schlüssel. Keine Cloud-Dienste. Keine Abonnements.
+Reine On-Device-Intelligenz, die Ihre staged Änderungen analysiert und sofort [Conventional Commits](https://www.conventionalcommits.org/) generiert.
 
 [![npm version](https://img.shields.io/npm/v/ai-commit.svg)](https://www.npmjs.com/package/ai-commit)
 [![CI](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml)
@@ -24,9 +25,9 @@ Pure on-device intelligence that analyzes your staged changes and generates [Con
 
 ---
 
-## ✨ Why `aic`?
+## ✨ Warum `aic`?
 
-Ever stared at `git commit` wondering what to write? `aic` ends that forever.
+Haben Sie schon einmal auf `git commit` gestarrt und gewusst, was Sie schreiben sollen? `aic` beendet das für immer.
 
 ```bash
 $ git add .
@@ -59,93 +60,93 @@ $ aic
   ╰──────────────────────────────────────────────────╯
 ```
 
-**That's it.** `aic` analyzed the diff, detected new files, identified the language, and generated a perfect Conventional Commit — all in milliseconds, all offline.
+**Das ist alles.** `aic` hat den Diff analysiert, neue Dateien erkannt, die Sprache identifiziert und einen perfekten Conventional Commit generiert — alles in Millisekunden, komplett offline.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Schnellstart
 
-### One-time use (no install)
+### Einmalige Nutzung (ohne Installation)
 
 ```bash
 npx ai-commit
 ```
 
-### Global install
+### Globale Installation
 
 ```bash
 npm install -g ai-commit
 ```
 
-Then use it anywhere:
+Dann überall verwenden:
 
 ```bash
 git add .
 aic
 ```
 
-The short alias `aic` works everywhere — it's the same command as `ai-commit`.
+Der Kurzalias `aic` funktioniert überall — es ist derselbe Befehl wie `ai-commit`.
 
 ---
 
-## 📖 Usage
+## 📖 Verwendung
 
-### Basic
+### Grundlagen
 
 ```bash
-# Stage your changes, then:
+# Änderungen stagen, dann:
 aic
 
-# Or use the full name:
+# Oder den vollständigen Namen verwenden:
 ai-commit
 ```
 
-### With Options
+### Mit Optionen
 
 ```bash
-# Force a specific commit type
+# Bestimmten Commit-Typ erzwingen
 aic --type feat
 
-# Add a scope
+# Bereich hinzufügen
 aic --scope auth
 
-# Preview without committing
+# Vorschau ohne Commit
 aic --dry-run
 
-# Use a custom message (bypasses AI)
-aic -m "your custom message"
+# Benutzerdefinierte Nachricht (umgeht KI)
+aic -m "Ihre benutzerdefinierte Nachricht"
 
-# Skip git hooks
+# Git-Hooks überspringen
 aic --no-verify
 
-# Auto-commit without confirmation
+# Auto-Commit ohne Bestätigung
 aic --yes
 
-# Output as JSON (for CI pipelines)
+# Als JSON ausgeben (für CI-Pipelines)
 aic --json
 ```
 
 ---
 
-## ⚙️ Options
+## ⚙️ Optionen
 
-| Option | Short | Description | Default |
-|--------|-------|-------------|---------|
-| `--type <type>` | `-t` | Force commit type | Auto-detected |
-| `--scope <scope>` | `-s` | Set commit scope | Auto-detected |
-| `--message <msg>` | `-m` | Custom message (skips AI) | — |
-| `--dry-run` | `-d` | Preview only, don't commit | `false` |
-| `--no-verify` | — | Skip git hooks | `false` |
-| `--yes` | `-y` | Skip confirmation prompt | `false` |
-| `--json` | — | Output result as JSON | `false` |
-| `--version` | `-V` | Show version | — |
-| `--help` | `-h` | Show help | — |
+| Option | Kurz | Beschreibung | Standard |
+|--------|------|-------------|----------|
+| `--type <type>` | `-t` | Commit-Typ erzwingen | Auto-erkannt |
+| `--scope <scope>` | `-s` | Commit-Bereich setzen | Auto-erkannt |
+| `--message <msg>` | `-m` | Benutzerdefinierte Nachricht (umgeht KI) | — |
+| `--dry-run` | `-d` | Nur Vorschau, kein Commit | `false` |
+| `--no-verify` | — | Git-Hooks überspringen | `false` |
+| `--yes` | `-y` | Bestätigungs-Prompt überspringen | `false` |
+| `--json` | — | Ergebnis als JSON ausgeben | `false` |
+| `--version` | `-V` | Version anzeigen | — |
+| `--help` | `-h` | Hilfe anzeigen | — |
 
 ---
 
-## 🧠 How It Works
+## 🧠 So funktioniert es
 
-`aic` uses **rule-based diff analysis** — no API keys, no network calls, no LLMs. Here's what happens when you run it:
+`aic` verwendet **regelbasierte Diff-Analyse** — keine API-Schlüssel, keine Netzwerkaufrufe, keine LLMs. Hier passiert beim Ausführen:
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -167,25 +168,25 @@ aic --json
 └─────────────────────────────────────────────────────┘
 ```
 
-### Classification Rules
+### Klassifizierungsregeln
 
-| Pattern | Detected Type |
-|---------|--------------|
-| New `.ts`, `.tsx`, `.js`, `.jsx`, `.py`, `.go`, `.rs` files | `feat` |
+| Muster | Erkannter Typ |
+|--------|--------------|
+| Neue `.ts`, `.tsx`, `.js`, `.jsx`, `.py`, `.go`, `.rs` Dateien | `feat` |
 | `*.test.*`, `*.spec.*`, `__tests__/`, `test/`, `tests/` | `test` |
 | `*.md`, `*.mdx`, `docs/`, `CHANGELOG`, `LICENSE` | `docs` |
 | `package.json`, `yarn.lock`, `pnpm-lock.yaml` | `chore` |
 | `.github/`, `.gitlab-ci`, `.circleci/` | `ci` |
 | `*.css`, `*.scss`, `*.sass`, `*.less` | `style` |
 | `webpack`, `rollup`, `vite`, `tsconfig` | `build` |
-| Files with `fix`, `bug`, `hotfix` in name | `fix` |
-| Everything else | `refactor` |
+| Dateien mit `fix`, `bug`, `hotfix` im Namen | `fix` |
+| Alles andere | `refactor` |
 
 ---
 
 ## 📋 Conventional Commits
 
-`aic` generates messages following the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+`aic` generiert Nachrichten gemäß der [Conventional Commits](https://www.conventionalcommits.org/)-Spezifikation:
 
 ```
 <type>[optional scope]: <description>
@@ -193,22 +194,22 @@ aic --json
 [optional body]
 ```
 
-### Types
+### Typen
 
-| Type | When to Use |
-|------|-------------|
-| `feat` | A new feature |
-| `fix` | A bug fix |
-| `docs` | Documentation only |
-| `style` | Formatting, missing semicolons, etc. |
-| `refactor` | Code change that doesn't fix a bug or add a feature |
-| `perf` | Performance improvement |
-| `test` | Adding or fixing tests |
-| `chore` | Build process or auxiliary tools |
-| `ci` | CI configuration |
-| `build` | Build system changes |
+| Typ | Wann verwenden |
+|-----|----------------|
+| `feat` | Eine neue Funktion |
+| `fix` | Ein Bugfix |
+| `docs` | Nur Dokumentation |
+| `style` | Formatierung, fehlende Semikolons usw. |
+| `refactor` | Code-Änderung, die weder Bugfix noch Feature ist |
+| `perf` | Performance-Verbesserung |
+| `test` | Tests hinzufügen oder reparieren |
+| `chore` | Build-Prozess oder Hilfstools |
+| `ci` | CI-Konfiguration |
+| `build` | Änderungen am Build-System |
 
-### Examples
+### Beispiele
 
 ```
 feat(auth): add OAuth2 login flow
@@ -222,9 +223,9 @@ ci: add Node 20 to test matrix
 
 ---
 
-## 🔧 CI Integration
+## 🔧 CI-Integration
 
-Use `aic` in your CI pipeline to auto-generate commit messages:
+Verwenden Sie `aic` in Ihrer CI-Pipeline, um Commit-Nachrichten automatisch zu generieren:
 
 ```yaml
 # .github/workflows/auto-commit.yml
@@ -257,7 +258,7 @@ jobs:
           GIT_COMMITTER_NAME: CI Bot
 ```
 
-### JSON Output for Pipelines
+### JSON-Ausgabe für Pipelines
 
 ```bash
 $ aic --json
@@ -270,49 +271,49 @@ $ aic --json
 
 ---
 
-## 🛠️ Development
+## 🛠️ Entwicklung
 
 ```bash
-# Clone the repo
+# Repository klonen
 git clone https://github.com/liangzhengtao/ai-commit.git
 cd ai-commit
 
-# Install dependencies
+# Abhängigkeiten installieren
 npm install
 
-# Run tests
+# Tests ausführen
 npm test
 
-# Try it locally
+# Lokal ausprobieren
 node bin/cli.js
 ```
 
 ---
 
-## See Also
+## Siehe auch
 
-| Project | Description |
+| Projekt | Beschreibung |
 |---------|-------------|
-| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 production AI coding rules |
-| [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — Score your project's AI-readiness |
-| [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | MCP servers for Cursor, Claude Code, and Kimi Code |
+| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 KI-Programmierregeln für die Produktion |
+| [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — Bewerten Sie die KI-Bereitschaft Ihres Projekts |
+| [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | MCP-Server für Cursor, Claude Code und Kimi Code |
 
-## 🤝 Contributing
+## 🤝 Mitwirken
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Beiträge sind willkommen! Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien.
 
 ```bash
-# Fork & clone, then:
+# Fork & Klonen, dann:
 git checkout -b feat/my-feature
-# Make changes...
+# Änderungen vornehmen...
 npm test
 git add .
-aic  # dogfood it! 🐕
+aic  # Dogfooding! 🐕
 ```
 
 ---
 
-## 📄 License
+## 📄 Lizenz
 
 MIT © [liangzhengtao](https://github.com/liangzhengtao)
 
@@ -320,47 +321,47 @@ MIT © [liangzhengtao](https://github.com/liangzhengtao)
 
 ## ❓ FAQ
 
-### Does `aic` send my code to any server?
+### Sendet `aic` meinen Code an einen Server?
 
-**No.** `aic` is 100% offline. All analysis happens locally using rule-based pattern matching. No API keys, no network requests, no telemetry.
+**Nein.** `aic` ist zu 100% offline. Die gesamte Analyse erfolgt lokal mittels regelbasierter Mustererkennung. Keine API-Schlüssel, keine Netzwerkanfragen, keine Telemetrie.
 
-### Why rule-based instead of an LLM?
+### Warum regelbasiert statt eines LLM?
 
-Three reasons:
-1. **Speed** — Results in milliseconds, not seconds
-2. **Privacy** — Your code never leaves your machine
-3. **Reliability** — No rate limits, no API costs, no outages
+Drei Gründe:
+1. **Geschwindigkeit** — Ergebnisse in Millisekunden, nicht Sekunden
+2. **Datenschutz** — Ihr Code verlässt niemals Ihren Computer
+3. **Zuverlässigkeit** — Keine Rate-Limits, keine API-Kosten, keine Ausfälle
 
-Future versions may offer optional LLM integration as an enhancement, but the rule-based engine will always be the default.
+Zukünftige Versionen können optionale LLM-Integration als Verbesserung bieten, aber die regelbasierte Engine wird immer der Standard sein.
 
-### Can I customize the commit types?
+### Kann ich die Commit-Typen anpassen?
 
-Not yet, but it's on the roadmap. See [CHANGELOG.md](CHANGELOG.md) for planned features.
+Noch nicht, aber es ist auf der Roadmap. Siehe [CHANGELOG.md](CHANGELOG.md) für geplante Funktionen.
 
-### Does it work with git hooks?
+### Funktioniert es mit Git-Hooks?
 
-Yes! By default, `aic` runs `git commit` which triggers your hooks normally. Use `--no-verify` to skip them.
+Ja! Standardmäßig führt `aic` `git commit` aus, das Ihre Hooks normal auslöst. Verwenden Sie `--no-verify`, um sie zu überspringen.
 
-### What if I want to edit the message before committing?
+### Was, wenn ich die Nachricht vor dem Commit bearbeiten möchte?
 
-That's the default behavior! After `aic` suggests a message, you can:
-- Press **Enter** to commit as-is
-- Press **E** to edit the message interactively
-- Press **C** to cancel
+Das ist das Standardverhalten! Nachdem `aic` eine Nachricht vorschlägt, können Sie:
+- **Enter** drücken, um wie vorgeschlagen zu committen
+- **E** drücken, um die Nachricht interaktiv zu bearbeiten
+- **C** drücken, um abzubrechen
 
-### Can I use it in a monorepo?
+### Funktioniert es in einem Monorepo?
 
-Yes. `aic` automatically detects the scope from your file paths. If all changed files are in `packages/auth/`, it will suggest `(auth)` as the scope.
+Ja. `aic` erkennt automatisch den Bereich aus Ihren Dateipfaden. Wenn alle geänderten Dateien in `packages/auth/` liegen, wird es `(auth)` als Bereich vorschlagen.
 
-### What Node.js version do I need?
+### Welche Node.js-Version wird benötigt?
 
-Node.js 16 or higher.
+Node.js 16 oder höher.
 
 ---
 
 <div align="center">
 
-**[⬆ Back to top](README.md)**
+**[⬆ Nach oben](README.md)**
 
 </div>
 
