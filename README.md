@@ -8,7 +8,7 @@ n<div align="center">
 
 <div align="center">
 
-# 🤖 `aic` — AI Commit Message Generator | AI 提交信息生成器 | AIコミットメッセージジェネレーター
+# 🤖 AI Commit | AI 提交 | AIコミット | Validation IA | Confirmación IA | تأكيد AI
 
 **AI writes your commit messages. You just review and confirm.**
 
